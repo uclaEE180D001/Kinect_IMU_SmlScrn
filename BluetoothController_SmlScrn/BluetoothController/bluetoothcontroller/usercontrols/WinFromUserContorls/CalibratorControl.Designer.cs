@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.timerContainer = new System.ComponentModel.Container();
             this.SetupButton = new System.Windows.Forms.Button();
             this.CalibrateButton = new System.Windows.Forms.Button();
             this.OutputTextBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DataProgressBar = new BluetoothController.UserControls.WinFromUserContorls.CalibratorProgressBar();
+            this.SetupGesture = new System.Windows.Forms.Timer(this.timerContainer);
             this.SuspendLayout();
             // 
             // SetupButton
@@ -46,6 +48,12 @@
             this.SetupButton.Text = "Setup Calibrator";
             this.SetupButton.UseVisualStyleBackColor = true;
             this.SetupButton.Click += new System.EventHandler(this.SetupButton_Click);
+            //
+            // SetupGesture
+            //
+            this.SetupGesture.Enabled = true;
+            this.SetupGesture.Tick += new System.EventHandler(this.Setup_Gesture);
+
             // 
             // CalibrateButton
             // 
@@ -126,5 +134,7 @@
         private System.Windows.Forms.Button CalibrateButton;
         private System.Windows.Forms.TextBox OutputTextBox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.ComponentModel.IContainer timerContainer;
+        private System.Windows.Forms.Timer SetupGesture;
     }
 }

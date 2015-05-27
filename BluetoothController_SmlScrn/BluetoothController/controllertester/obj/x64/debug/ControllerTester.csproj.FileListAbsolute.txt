@@ -203,3 +203,33 @@ C:\Users\uclaEE180D001\Documents\Vivek's Work\B1\BluetoothControllerv2\Bluetooth
 C:\Users\uclaEE180D001\Documents\Vivek's Work\B1\BluetoothControllerv2\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.csproj.GenerateResource.Cache
 C:\Users\uclaEE180D001\Documents\Vivek's Work\B1\BluetoothControllerv2\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.exe
 C:\Users\uclaEE180D001\Documents\Vivek's Work\B1\BluetoothControllerv2\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.pdb
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\ControllerTester.exe.config
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\ControllerTester.exe
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\ControllerTester.pdb
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\BluetoothController.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\InTheHand.Net.Personal.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Kinect.Face.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Kinect.VisualGestureBuilder.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\BluetoothController.pdb
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\InTheHand.Net.Personal.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Kinect.Face.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Kinect.VisualGestureBuilder.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\bin\Debug\HelixToolkit.Wpf.pdb
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.csprojResolveAssemblyReference.cache
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\Window1.baml
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\Window1.g.cs
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester_MarkupCompile.cache
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.g.resources
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.Form1.resources
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.Properties.Resources.resources
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.UserControl1.resources
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.csproj.GenerateResource.Cache
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.exe
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\ControllerTester\obj\x64\Debug\ControllerTester.pdb

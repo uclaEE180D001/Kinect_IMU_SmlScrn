@@ -20,12 +20,19 @@ namespace BluetoothController
         public static double[] mvsdPrevQuat = new double[4] { 0, 0, 0, 0 };
         public static int FlipCounter;  //tracks the number of times a sign flip has been applied to the data
         public static bool ValidVSD;    //True if Calibrator Setup is on AND the VSD is considered 'good'
+        public static HandState LastHandState; //2 = open, 3 = closed, 4 = lasso
+        public static int LassoCount;
+        public static int PrevSec;
+
         static DataTracker()
         {
             CurrentSection = 0;
             SectionCounter = 0;
             FlipCounter = 0;
             ValidVSD = false;
+            LastHandState = HandState.Open;
+            LassoCount = 0;
+            PrevSec = 0;
         }
     }
 }

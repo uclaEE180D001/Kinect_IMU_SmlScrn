@@ -33,6 +33,7 @@ namespace ControllerTester
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             InitializeComponent();
             this.CalibratorControl.SetupClicked += CalibratorControl_SetupClicked;
+            //this.CalibratorControl_SetupGestured += CalibratorControl_SetupGestured;
             this.DPMC = new DataProducerManagerCollection(this.Charts);
             this.FileLoggers = new List<FileLogger>();
             this.SensorDataGridView.AutoGenerateColumns = false;
@@ -249,8 +250,16 @@ namespace ControllerTester
             if (temp_DPM != null)
                 this.CalibratorControl.InertialSesnor = temp_DPM.IDataProducer as IDataProducer<InertialSensorData>;
         }
-
-
+        
+        private void CalibratorControl_SetupGestured(object sender, EventArgs e)
+        {
+            if(DataTracker.LassoCount == 2)
+            {
+                //This function is more for validating the data when calling the setup button. The actual trigger is in CalibratorControl.cs.
+                CalibratorControl_SetupClicked(sender, e);
+            }
+        }
+        
         #region DataView Events
         private void SensorDataGridView_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {

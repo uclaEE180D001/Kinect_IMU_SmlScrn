@@ -21,8 +21,6 @@ namespace BluetoothController.UserControls.WinFromUserContorls
         public IDataProducer<InertialSensorData> InertialSesnor { get; set; }
         public IDataProducer<VirtualSensorData> VirtualSesnor { get; set; }
 
-        //public int CalibrationCount = 0;    //Place here instead of merge, because it zeros out every time merge is constructed.... unless we store this value in a global variables file...
-
         protected bool IsReady = false;
         protected CancellationTokenSource CancelToken = new CancellationTokenSource();
         public CalibratorControl()
@@ -58,11 +56,20 @@ namespace BluetoothController.UserControls.WinFromUserContorls
             if (this.VirtualSesnor == null)
                 throw new ArgumentException("Cannot be null.", this.VirtualSesnor.GetType().Name);
 
-            //CalibrationCount++; //If we are going to call the calibrator, then we will increment the counter
             DataTracker.SectionCounter++;
             DataTracker.CurrentSection = DataTracker.SectionCounter;    //Inside Calibrator setup, we apply Count as section ID - change this for only inside buffer
             this.Calibrator = new Merge(this.VirtualSesnor, this.InertialSesnor, DataTracker.SectionCounter);
             this.BadProgressBarUpdater((int) Merge.CalibrationLookBackTimeInSec);
+        }
+
+
+        protected void Setup_Gesture(object sender, EventArgs e)
+        {
+            if (DataTracker.LassoCount == 2)
+            {
+                DataTracker.LassoCount = 0;
+                SetupButton_Click(sender, e);
+            }
         }
 
         private void CalibrateButton_Click(object sender, EventArgs e)

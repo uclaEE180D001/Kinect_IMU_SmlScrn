@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.timerContainer = new System.ComponentModel.Container();
             this.BluethoothDevsCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             this.BindToRightForearmButton = new System.Windows.Forms.Button();
             this.CalibrateLikeFrameButton = new System.Windows.Forms.Button();
             this.LikeFramesTextBox = new System.Windows.Forms.TextBox();
+            this.GestureForCalibratorControlSetup = new System.Windows.Forms.Timer(this.timerContainer);
             this.Charts = new BluetoothController.SensorGrapherControl();
             this.CalibratorControl = new BluetoothController.UserControls.WinFromUserContorls.CalibratorControl();
             ((System.ComponentModel.ISupportInitialize)(this.SensorDataGridView)).BeginInit();
@@ -254,7 +256,12 @@
             this.LikeFramesTextBox.Multiline = true;
             this.LikeFramesTextBox.Name = "LikeFramesTextBox";
             this.LikeFramesTextBox.Size = new System.Drawing.Size(172, 116);
-            this.LikeFramesTextBox.TabIndex = 31;
+            this.LikeFramesTextBox.TabIndex = 31;   
+            // 
+            // Gesture Control
+            // 
+            this.GestureForCalibratorControlSetup.Enabled = true;
+            this.GestureForCalibratorControlSetup.Tick += new System.EventHandler(this.CalibratorControl_SetupGestured);
             // 
             // Charts
             // 
@@ -331,6 +338,8 @@
         private System.Windows.Forms.Button BindToRightForearmButton;
         private System.Windows.Forms.Button CalibrateLikeFrameButton;
         private System.Windows.Forms.TextBox LikeFramesTextBox;
+        private System.ComponentModel.IContainer timerContainer;
+        private System.Windows.Forms.Timer GestureForCalibratorControlSetup;
         private BluetoothController.UserControls.WinFromUserContorls.CalibratorControl CalibratorControl;
     }
 }

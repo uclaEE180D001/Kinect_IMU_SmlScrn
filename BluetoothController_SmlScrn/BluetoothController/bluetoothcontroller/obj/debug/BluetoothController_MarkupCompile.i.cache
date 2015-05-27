@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\uclaEE180D001\Documents\Vivek's Work\B1\BluetoothControllerv2\BluetoothController_SmlScrn\BluetoothController\BluetoothController\obj\Debug\
+C:\Users\uclaEE180D001\Documents\GitHub\Kinect_IMU_SmlScrn\BluetoothController_SmlScrn\BluetoothController\BluetoothController\obj\Debug\
 BluetoothController
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 5-1885832717
 
 89-1398075219
-26599556139
+26-1252592041
 UserControls\WPFUserControls\IMUQuatViewer.xaml;UserControls\WPFUserControls\QuaternionArrow.xaml;UserControls\WPFUserControls\SkeletonBodyViewer.xaml;UserControls\WPFUserControls\SkeletonQuatBodyViewer.xaml;UserControls\WPFUserControls\window1.xaml;
 
 False

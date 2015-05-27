@@ -133,7 +133,7 @@ namespace BluetoothController
             }
 
             //Rotation
-            vsd.rot = e.Body.JointOrientations[JointType.WristRight].Orientation.ToQuaternion(); //Apply filter under this note: X,Y,Z,W
+            vsd.rot = e.Body.JointOrientations[JointType.WristRight].Orientation.ToQuaternion(); //Apply filter under this. Note: X,Y,Z,W
 
             
             //Begin Quat Filter
@@ -179,8 +179,21 @@ namespace BluetoothController
             vsd.rot.Z = quat[3];
 
             #endregion
-            //End Rotation Filter
+            //End Quat Filter
             
+            #region HandStateTracking
+            if (e.Body.HandLeftState == HandState.Lasso && DataTracker.LastHandState == HandState.Closed)
+            {
+                if (DataTracker.LassoCount < 2 && Math.Abs(DateTime.Now.Second - DataTracker.PrevSec) < 5)
+                    DataTracker.LassoCount++;
+                DataTracker.PrevSec = DateTime.Now.Second;
+            }
+
+            DataTracker.LastHandState = e.Body.HandLeftState;
+
+            #endregion
+
+
 
             if (this.FurtherJoint == JointType.WristRight)
             { //Only do strict tracking when right wrist is selected
@@ -207,7 +220,10 @@ namespace BluetoothController
                 }
            
         
-  
+
+
+
+
             if (this.NewIData != null)
                 this.NewIData(this, vsd);         //[not edited] This triggers data collection? (So changes must be before this)
             if (this.NewTData != null)
