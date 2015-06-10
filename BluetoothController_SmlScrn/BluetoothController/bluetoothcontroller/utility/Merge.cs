@@ -31,7 +31,7 @@ namespace BluetoothController
         //private int CalibrationCount = 0;   //locally stored count on the number of times calibrator has been called. 
 
 
-        public Merge(IDataProducer<VirtualSensorData> idealsensor, IDataProducer<InertialSensorData> actualsensor, int count)
+        public Merge(IDataProducer<VirtualSensorData> idealsensor, IDataProducer<InertialSensorData> actualsensor)
         {
             //CalibrationCount = count;
             this.ActualSensor = actualsensor;

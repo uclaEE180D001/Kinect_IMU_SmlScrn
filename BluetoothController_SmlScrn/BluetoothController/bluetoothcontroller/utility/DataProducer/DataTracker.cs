@@ -22,7 +22,9 @@ namespace BluetoothController
         public static bool ValidVSD;    //True if Calibrator Setup is on AND the VSD is considered 'good'
         public static HandState LastHandState; //2 = open, 3 = closed, 4 = lasso
         public static int LassoCount;
-        public static int PrevSec;
+        public static int ClosedCount;
+        public static int PrevLassoSec;
+        public static int PrevClosedSec;
 
         static DataTracker()
         {
@@ -32,7 +34,9 @@ namespace BluetoothController
             ValidVSD = false;
             LastHandState = HandState.Open;
             LassoCount = 0;
-            PrevSec = 0;
+            ClosedCount = 0;
+            PrevLassoSec = 0;
+            PrevClosedSec = 0;
         }
     }
 }

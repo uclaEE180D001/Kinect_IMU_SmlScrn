@@ -58,7 +58,7 @@ namespace BluetoothController.UserControls.WinFromUserContorls
 
             DataTracker.SectionCounter++;
             DataTracker.CurrentSection = DataTracker.SectionCounter;    //Inside Calibrator setup, we apply Count as section ID - change this for only inside buffer
-            this.Calibrator = new Merge(this.VirtualSesnor, this.InertialSesnor, DataTracker.SectionCounter);
+            this.Calibrator = new Merge(this.VirtualSesnor, this.InertialSesnor);
             this.BadProgressBarUpdater((int) Merge.CalibrationLookBackTimeInSec);
         }
 

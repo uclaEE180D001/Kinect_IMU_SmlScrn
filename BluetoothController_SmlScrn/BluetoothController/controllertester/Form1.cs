@@ -178,6 +178,7 @@ namespace ControllerTester
                 foreach(ILogger logger in this.FileLoggers)
                     logger.StopLogging();
                 this.LoggingButton.Text = "Start Data Logging";
+                this.LoggingButton.BackColor = System.Drawing.Color.Transparent;
                 this.BrowseButton.Enabled = true;
                 this.LoggingButton.Enabled = true;
             }
@@ -193,6 +194,7 @@ namespace ControllerTester
                     logger.StartLogging();
                 islogging = true;
                 this.LoggingButton.Text = "Stop Data Logging";
+                this.LoggingButton.BackColor = System.Drawing.Color.SkyBlue;
                 this.BrowseButton.Enabled = true;
                 this.LoggingButton.Enabled = true;
             }
@@ -251,14 +253,20 @@ namespace ControllerTester
                 this.CalibratorControl.InertialSesnor = temp_DPM.IDataProducer as IDataProducer<InertialSensorData>;
         }
         
-        private void CalibratorControl_SetupGestured(object sender, EventArgs e)
+        private void GestureControl(object sender, EventArgs e)
         {
             if(DataTracker.LassoCount == 2)
             {
                 //This function is more for validating the data when calling the setup button. The actual trigger is in CalibratorControl.cs.
                 CalibratorControl_SetupClicked(sender, e);
             }
+            if (DataTracker.ClosedCount == 2)
+            {
+                LoggingButton_Click(sender, e);
+                DataTracker.ClosedCount = 0;
+            }
         }
+
         
         #region DataView Events
         private void SensorDataGridView_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)

@@ -50,7 +50,7 @@
             this.BindToRightForearmButton = new System.Windows.Forms.Button();
             this.CalibrateLikeFrameButton = new System.Windows.Forms.Button();
             this.LikeFramesTextBox = new System.Windows.Forms.TextBox();
-            this.GestureForCalibratorControlSetup = new System.Windows.Forms.Timer(this.timerContainer);
+            this.GestureCommandsTimer = new System.Windows.Forms.Timer(this.timerContainer);
             this.Charts = new BluetoothController.SensorGrapherControl();
             this.CalibratorControl = new BluetoothController.UserControls.WinFromUserContorls.CalibratorControl();
             ((System.ComponentModel.ISupportInitialize)(this.SensorDataGridView)).BeginInit();
@@ -260,8 +260,8 @@
             // 
             // Gesture Control
             // 
-            this.GestureForCalibratorControlSetup.Enabled = true;
-            this.GestureForCalibratorControlSetup.Tick += new System.EventHandler(this.CalibratorControl_SetupGestured);
+            this.GestureCommandsTimer.Enabled = true;
+            this.GestureCommandsTimer.Tick += new System.EventHandler(this.GestureControl);
             // 
             // Charts
             // 
@@ -339,7 +339,7 @@
         private System.Windows.Forms.Button CalibrateLikeFrameButton;
         private System.Windows.Forms.TextBox LikeFramesTextBox;
         private System.ComponentModel.IContainer timerContainer;
-        private System.Windows.Forms.Timer GestureForCalibratorControlSetup;
+        private System.Windows.Forms.Timer GestureCommandsTimer;
         private BluetoothController.UserControls.WinFromUserContorls.CalibratorControl CalibratorControl;
     }
 }
