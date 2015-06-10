@@ -196,6 +196,10 @@ namespace BluetoothController
             }
             if (e.Body.HandLeftState != HandState.Unknown)
                 DataTracker.LastHandState = e.Body.HandLeftState;
+            if (Math.Abs(DateTime.Now.Second - DataTracker.PrevLassoSec) >= 5)
+                DataTracker.LassoCount = 0;
+            if (Math.Abs(DateTime.Now.Second - DataTracker.PrevClosedSec) >= 5)
+                DataTracker.ClosedCount = 0;
 
             #endregion
 
