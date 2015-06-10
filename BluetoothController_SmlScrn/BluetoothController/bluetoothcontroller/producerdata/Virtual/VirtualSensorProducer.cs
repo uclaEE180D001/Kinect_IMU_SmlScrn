@@ -184,12 +184,18 @@ namespace BluetoothController
             #region HandStateTracking
             if (e.Body.HandLeftState == HandState.Lasso && DataTracker.LastHandState == HandState.Closed)
             {
-                if (DataTracker.LassoCount < 2 && Math.Abs(DateTime.Now.Second - DataTracker.PrevSec) < 5)
+                if (DataTracker.LassoCount < 2 && Math.Abs(DateTime.Now.Second - DataTracker.PrevLassoSec) < 5)
                     DataTracker.LassoCount++;
-                DataTracker.PrevSec = DateTime.Now.Second;
+                DataTracker.PrevLassoSec = DateTime.Now.Second;
             }
-
-            DataTracker.LastHandState = e.Body.HandLeftState;
+            if (e.Body.HandLeftState == HandState.Open && DataTracker.LastHandState == HandState.Closed)
+            {
+                if (DataTracker.ClosedCount < 2 && Math.Abs(DateTime.Now.Second - DataTracker.PrevClosedSec) < 5)
+                    DataTracker.ClosedCount++;
+                DataTracker.PrevClosedSec = DateTime.Now.Second;
+            }
+            if (e.Body.HandLeftState != HandState.Unknown)
+                DataTracker.LastHandState = e.Body.HandLeftState;
 
             #endregion
 
